@@ -8,7 +8,7 @@
 
 #import "CHDivideEquallyChannelView.h"
 #import "UIButton+CHForbidHighlighted.h"
-#import <Masonry.h>
+#import "Masonry.h"
 
 @interface CHDivideEquallyChannelView ()
 

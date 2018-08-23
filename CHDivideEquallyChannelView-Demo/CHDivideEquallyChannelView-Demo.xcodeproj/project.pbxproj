@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4319BD94212ECF1D00EE4093 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4319BD93212ECF1D00EE4093 /* AppDelegate.m */; };
+		4319BD97212ECF1D00EE4093 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4319BD96212ECF1D00EE4093 /* ViewController.m */; };
+		4319BD9A212ECF1D00EE4093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4319BD98212ECF1D00EE4093 /* Main.storyboard */; };
+		4319BD9C212ECF2100EE4093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4319BD9B212ECF2100EE4093 /* Assets.xcassets */; };
+		4319BD9F212ECF2100EE4093 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4319BD9D212ECF2100EE4093 /* LaunchScreen.storyboard */; };
+		4319BDA2212ECF2100EE4093 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4319BDA1212ECF2100EE4093 /* main.m */; };
+		4319BDAD212ECFCD00EE4093 /* CHDivideEquallyChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4319BDAA212ECFCD00EE4093 /* CHDivideEquallyChannelView.m */; };
+		4319BDAE212ECFCD00EE4093 /* UIButton+CHForbidHighlighted.m in Sources */ = {isa = PBXBuildFile; fileRef = 4319BDAB212ECFCD00EE4093 /* UIButton+CHForbidHighlighted.m */; };
+		8F3C72BCC07CE9996A49731F /* libPods-CHDivideEquallyChannelView-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 296801DC2F9D021A1F80ACB5 /* libPods-CHDivideEquallyChannelView-Demo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		296801DC2F9D021A1F80ACB5 /* libPods-CHDivideEquallyChannelView-Demo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CHDivideEquallyChannelView-Demo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3793AD5C2C72A049DC8C0DC5 /* Pods-CHDivideEquallyChannelView-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHDivideEquallyChannelView-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CHDivideEquallyChannelView-Demo/Pods-CHDivideEquallyChannelView-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		4319BD8F212ECF1D00EE4093 /* CHDivideEquallyChannelView-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CHDivideEquallyChannelView-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4319BD92212ECF1D00EE4093 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4319BD93212ECF1D00EE4093 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4319BD95212ECF1D00EE4093 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4319BD96212ECF1D00EE4093 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4319BD99212ECF1D00EE4093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4319BD9B212ECF2100EE4093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4319BD9E212ECF2100EE4093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4319BDA0212ECF2100EE4093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4319BDA1212ECF2100EE4093 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4319BDA9212ECFCD00EE4093 /* UIButton+CHForbidHighlighted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CHForbidHighlighted.h"; sourceTree = "<group>"; };
+		4319BDAA212ECFCD00EE4093 /* CHDivideEquallyChannelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDivideEquallyChannelView.m; sourceTree = "<group>"; };
+		4319BDAB212ECFCD00EE4093 /* UIButton+CHForbidHighlighted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CHForbidHighlighted.m"; sourceTree = "<group>"; };
+		4319BDAC212ECFCD00EE4093 /* CHDivideEquallyChannelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDivideEquallyChannelView.h; sourceTree = "<group>"; };
+		B42F8A5361ABF7A6FF65D878 /* Pods-CHDivideEquallyChannelView-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHDivideEquallyChannelView-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CHDivideEquallyChannelView-Demo/Pods-CHDivideEquallyChannelView-Demo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4319BD8C212ECF1D00EE4093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F3C72BCC07CE9996A49731F /* libPods-CHDivideEquallyChannelView-Demo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4319BD86212ECF1D00EE4093 = {
+			isa = PBXGroup;
+			children = (
+				4319BD91212ECF1D00EE4093 /* CHDivideEquallyChannelView-Demo */,
+				4319BD90212ECF1D00EE4093 /* Products */,
+				8FBF13384FE194D35952039A /* Pods */,
+				D30CDC6A5BF39F32E43AD56E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4319BD90212ECF1D00EE4093 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4319BD8F212ECF1D00EE4093 /* CHDivideEquallyChannelView-Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4319BD91212ECF1D00EE4093 /* CHDivideEquallyChannelView-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				4319BDA8212ECFCD00EE4093 /* CHDivideEquallyChannelView */,
+				4319BD92212ECF1D00EE4093 /* AppDelegate.h */,
+				4319BD93212ECF1D00EE4093 /* AppDelegate.m */,
+				4319BD95212ECF1D00EE4093 /* ViewController.h */,
+				4319BD96212ECF1D00EE4093 /* ViewController.m */,
+				4319BD98212ECF1D00EE4093 /* Main.storyboard */,
+				4319BD9B212ECF2100EE4093 /* Assets.xcassets */,
+				4319BD9D212ECF2100EE4093 /* LaunchScreen.storyboard */,
+				4319BDA0212ECF2100EE4093 /* Info.plist */,
+				4319BDA1212ECF2100EE4093 /* main.m */,
+			);
+			path = "CHDivideEquallyChannelView-Demo";
+			sourceTree = "<group>";
+		};
+		4319BDA8212ECFCD00EE4093 /* CHDivideEquallyChannelView */ = {
+			isa = PBXGroup;
+			children = (
+				4319BDAC212ECFCD00EE4093 /* CHDivideEquallyChannelView.h */,
+				4319BDAA212ECFCD00EE4093 /* CHDivideEquallyChannelView.m */,
+				4319BDA9212ECFCD00EE4093 /* UIButton+CHForbidHighlighted.h */,
+				4319BDAB212ECFCD00EE4093 /* UIButton+CHForbidHighlighted.m */,
+			);
+			name = CHDivideEquallyChannelView;
+			path = ../../CHDivideEquallyChannelView;
+			sourceTree = "<group>";
+		};
+		8FBF13384FE194D35952039A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B42F8A5361ABF7A6FF65D878 /* Pods-CHDivideEquallyChannelView-Demo.debug.xcconfig */,
+				3793AD5C2C72A049DC8C0DC5 /* Pods-CHDivideEquallyChannelView-Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D30CDC6A5BF39F32E43AD56E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				296801DC2F9D021A1F80ACB5 /* libPods-CHDivideEquallyChannelView-Demo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4319BD8E212ECF1D00EE4093 /* CHDivideEquallyChannelView-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4319BDA5212ECF2100EE4093 /* Build configuration list for PBXNativeTarget "CHDivideEquallyChannelView-Demo" */;
+			buildPhases = (
+				91CF87270E8B68AC4356E30E /* [CP] Check Pods Manifest.lock */,
+				4319BD8B212ECF1D00EE4093 /* Sources */,
+				4319BD8C212ECF1D00EE4093 /* Frameworks */,
+				4319BD8D212ECF1D00EE4093 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CHDivideEquallyChannelView-Demo";
+			productName = "CHDivideEquallyChannelView-Demo";
+			productReference = 4319BD8F212ECF1D00EE4093 /* CHDivideEquallyChannelView-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4319BD87212ECF1D00EE4093 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "张晨晖";
+				TargetAttributes = {
+					4319BD8E212ECF1D00EE4093 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 4319BD8A212ECF1D00EE4093 /* Build configuration list for PBXProject "CHDivideEquallyChannelView-Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4319BD86212ECF1D00EE4093;
+			productRefGroup = 4319BD90212ECF1D00EE4093 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4319BD8E212ECF1D00EE4093 /* CHDivideEquallyChannelView-Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4319BD8D212ECF1D00EE4093 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4319BD9F212ECF2100EE4093 /* LaunchScreen.storyboard in Resources */,
+				4319BD9C212ECF2100EE4093 /* Assets.xcassets in Resources */,
+				4319BD9A212ECF1D00EE4093 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91CF87270E8B68AC4356E30E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CHDivideEquallyChannelView-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4319BD8B212ECF1D00EE4093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4319BDAD212ECFCD00EE4093 /* CHDivideEquallyChannelView.m in Sources */,
+				4319BD97212ECF1D00EE4093 /* ViewController.m in Sources */,
+				4319BDA2212ECF2100EE4093 /* main.m in Sources */,
+				4319BDAE212ECFCD00EE4093 /* UIButton+CHForbidHighlighted.m in Sources */,
+				4319BD94212ECF1D00EE4093 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4319BD98212ECF1D00EE4093 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4319BD99212ECF1D00EE4093 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4319BD9D212ECF2100EE4093 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4319BD9E212ECF2100EE4093 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4319BDA3212ECF2100EE4093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4319BDA4212ECF2100EE4093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4319BDA6212ECF2100EE4093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B42F8A5361ABF7A6FF65D878 /* Pods-CHDivideEquallyChannelView-Demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F22VTWNS57;
+				INFOPLIST_FILE = "CHDivideEquallyChannelView-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chenhuizhang.CHDivideEquallyChannelView-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4319BDA7212ECF2100EE4093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3793AD5C2C72A049DC8C0DC5 /* Pods-CHDivideEquallyChannelView-Demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F22VTWNS57;
+				INFOPLIST_FILE = "CHDivideEquallyChannelView-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chenhuizhang.CHDivideEquallyChannelView-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4319BD8A212ECF1D00EE4093 /* Build configuration list for PBXProject "CHDivideEquallyChannelView-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4319BDA3212ECF2100EE4093 /* Debug */,
+				4319BDA4212ECF2100EE4093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4319BDA5212ECF2100EE4093 /* Build configuration list for PBXNativeTarget "CHDivideEquallyChannelView-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4319BDA6212ECF2100EE4093 /* Debug */,
+				4319BDA7212ECF2100EE4093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4319BD87212ECF1D00EE4093 /* Project object */;
+}

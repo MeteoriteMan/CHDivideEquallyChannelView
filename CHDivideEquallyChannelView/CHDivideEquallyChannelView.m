@@ -28,7 +28,7 @@
     UIColor *_buttonSelectedColor;
     UIFont *_buttonNormalFont;
     UIFont *_buttonSelectedFont;
-    UIColor *_viewTiwgBackgroundColor;
+    UIColor *_viewTwigBackgroundColor;
 }
 
 /*
@@ -70,7 +70,6 @@
 - (UIView *)viewTwig {
     if (!_viewTwig) {
         _viewTwig = [[UIView alloc] init];
-        _viewTwig.backgroundColor = self.buttonSelectedColor;
         _viewTwig.hidden = YES;
     }
     return _viewTwig;
@@ -100,6 +99,11 @@
 - (void)setShouldHideTwigView:(BOOL)shouldHideTwigView {
     _shouldHideTwigView = shouldHideTwigView;
     self.viewTwig.hidden = shouldHideTwigView;
+}
+
+- (void)setViewTwigBackgroundColor:(UIColor *)viewTwigBackgroundColor {
+    _viewTwigBackgroundColor = viewTwigBackgroundColor;
+    self.viewTwig.backgroundColor = viewTwigBackgroundColor;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -213,6 +217,7 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     if (self.shouldTwigViewBeRadius) {
+        self.viewTwig.backgroundColor = self.viewTwigBackgroundColor;
         self.viewTwig.layer.cornerRadius = self.viewTwig.bounds.size.height / 2;
         self.viewTwig.layer.masksToBounds = YES;
     }

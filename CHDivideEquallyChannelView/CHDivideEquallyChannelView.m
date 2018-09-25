@@ -163,15 +163,65 @@
             [arrayM addObject:button];
         }
         self.arrayButton = arrayM.copy;
-        self.arrayButton.firstObject.selected = YES;
-        self.buttonLastSelected = self.arrayButton.firstObject;
-//        if (self.channelViewClickBlock) {
-//            self.channelViewClickBlock(self.buttonLastSelected.tag);
-//        }
+        [self setSelectedButton:self.arrayButton.firstObject];
     }
 }
 
 - (void)setButtonLastSelected:(UIButton *)buttonLastSelected {
+    switch (self.twigViewAnimationType) {
+        case CHDivideEquallyChannelViewTwigViewAnimationTypeDefault: {
+            [self updateTwigViewDefaultTypeWith:buttonLastSelected];
+        }
+            break;
+        case CHDivideEquallyChannelViewTwigViewAnimationTypeBounces: {
+            if (_buttonLastSelected) {
+                [self.viewTwig mas_remakeConstraints:^(MASConstraintMaker *make) {
+                    if (buttonLastSelected.tag > self->_buttonLastSelected.tag) {//点击在右边
+                        make.left.equalTo(self->_buttonLastSelected);
+                        make.right.equalTo(buttonLastSelected);
+                    } else {
+                        make.left.equalTo(buttonLastSelected);
+                        make.right.equalTo(self->_buttonLastSelected);
+                    }
+                    make.bottom.offset(0);
+                    make.height.offset(self.viewTwigHeight);
+                }];
+                [UIView animateWithDuration:.25 animations:^{
+                    [self layoutIfNeeded];
+                } completion:^(BOOL finished) {
+                    self->_buttonLastSelected = buttonLastSelected;
+                    [self.viewTwig mas_remakeConstraints:^(MASConstraintMaker *make) {
+                        make.centerX.equalTo(buttonLastSelected);
+                        make.bottom.offset(0);
+                        if (self.shouldTwigViewWidthEquateToSelectedButton) {
+                            make.width.equalTo(buttonLastSelected.mas_width);
+                        } else {
+                            make.width.offset(self.viewTwigWidth);
+                        }
+                        make.height.offset(self.viewTwigHeight);
+                    }];
+                    if (self.viewTwig.hidden == YES) {
+                        [self layoutIfNeeded];
+                        self.viewTwig.hidden = self.shouldHideTwigView;
+                    } else {
+                        [UIView animateWithDuration:.25 animations:^{
+                            [self layoutIfNeeded];
+                        }];
+                    }
+                }];
+            } else {
+                [self updateTwigViewDefaultTypeWith:buttonLastSelected];
+            }
+        }
+            break;
+        default: {
+            [self updateTwigViewDefaultTypeWith:buttonLastSelected];
+        }
+            break;
+    }
+}
+
+- (void)updateTwigViewDefaultTypeWith:(UIButton *)buttonLastSelected {
     _buttonLastSelected = buttonLastSelected;
     [self.viewTwig mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(buttonLastSelected);
@@ -194,6 +244,13 @@
 }
 
 - (void)buttonClick:(UIButton *)sender {
+    [self setSelectedButton:sender];
+    if (self.channelViewClickBlock) {
+        self.channelViewClickBlock(sender.tag);
+    }
+}
+
+- (void)setSelectedButton:(UIButton *)sender {
     self.buttonLastSelected.titleLabel.font = self.buttonNormalFont;
     sender.titleLabel.font = self.buttonSelectedFont;
     if (sender.selected == YES) {
@@ -201,9 +258,6 @@
     }
     sender.selected = !sender.selected;
     self.buttonLastSelected.selected = !self.buttonLastSelected.selected;
-    if (self.channelViewClickBlock) {
-        self.channelViewClickBlock(sender.tag);
-    }
     self.buttonLastSelected = sender;
 }
 

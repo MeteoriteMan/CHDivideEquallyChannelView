@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, CHDivideEquallyChannelViewTwigViewAnimationType) {
+    CHDivideEquallyChannelViewTwigViewAnimationTypeDefault,
+    CHDivideEquallyChannelViewTwigViewAnimationTypeBounces,
+};
+
 typedef void(^CHDivideEquallyChannelViewClickBlock)(NSInteger tag);
 
 @interface CHDivideEquallyChannelView : UIView
@@ -44,6 +49,8 @@ typedef void(^CHDivideEquallyChannelViewClickBlock)(NSInteger tag);
 
 /// 是否对TwigView宽度是否和选中按钮相等,如果设置为YES.设置TwigView失效
 @property (nonatomic ,assign) BOOL shouldTwigViewWidthEquateToSelectedButton;
+
+@property (nonatomic ,assign) CHDivideEquallyChannelViewTwigViewAnimationType twigViewAnimationType;
 
 /// 选中标签
 @property (nonatomic ,assign) NSInteger selectTag;

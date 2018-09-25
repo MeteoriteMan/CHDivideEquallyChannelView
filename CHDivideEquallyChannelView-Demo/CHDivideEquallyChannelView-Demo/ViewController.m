@@ -32,6 +32,7 @@
     self.divideEquallyChannelView.arrayTitle = @[@"史泽东" ,@"董雷" ,@"村上村树"];
     self.divideEquallyChannelView.buttonSelectedColor = [UIColor redColor];
     self.divideEquallyChannelView.viewTwigBackgroundColor = [UIColor greenColor];
+    self.divideEquallyChannelView.twigViewAnimationType = CHDivideEquallyChannelViewTwigViewAnimationTypeBounces;
     [self.view addSubview:self.divideEquallyChannelView];
     [self.divideEquallyChannelView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.offset(0);

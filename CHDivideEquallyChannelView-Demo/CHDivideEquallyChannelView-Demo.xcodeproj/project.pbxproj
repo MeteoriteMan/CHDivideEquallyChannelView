@@ -14,7 +14,7 @@
 		4319BD9F212ECF2100EE4093 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4319BD9D212ECF2100EE4093 /* LaunchScreen.storyboard */; };
 		4319BDA2212ECF2100EE4093 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4319BDA1212ECF2100EE4093 /* main.m */; };
 		4319BDAD212ECFCD00EE4093 /* CHDivideEquallyChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4319BDAA212ECFCD00EE4093 /* CHDivideEquallyChannelView.m */; };
-		4319BDAE212ECFCD00EE4093 /* UIButton+CHForbidHighlighted.m in Sources */ = {isa = PBXBuildFile; fileRef = 4319BDAB212ECFCD00EE4093 /* UIButton+CHForbidHighlighted.m */; };
+		435177FE215A3D5A009FF99C /* UIButton+CHForbidHighlighted.m in Sources */ = {isa = PBXBuildFile; fileRef = 435177FD215A3D5A009FF99C /* UIButton+CHForbidHighlighted.m */; };
 		8F3C72BCC07CE9996A49731F /* libPods-CHDivideEquallyChannelView-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 296801DC2F9D021A1F80ACB5 /* libPods-CHDivideEquallyChannelView-Demo.a */; };
 /* End PBXBuildFile section */
 
@@ -31,10 +31,10 @@
 		4319BD9E212ECF2100EE4093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4319BDA0212ECF2100EE4093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4319BDA1212ECF2100EE4093 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4319BDA9212ECFCD00EE4093 /* UIButton+CHForbidHighlighted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CHForbidHighlighted.h"; sourceTree = "<group>"; };
 		4319BDAA212ECFCD00EE4093 /* CHDivideEquallyChannelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHDivideEquallyChannelView.m; sourceTree = "<group>"; };
-		4319BDAB212ECFCD00EE4093 /* UIButton+CHForbidHighlighted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CHForbidHighlighted.m"; sourceTree = "<group>"; };
 		4319BDAC212ECFCD00EE4093 /* CHDivideEquallyChannelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHDivideEquallyChannelView.h; sourceTree = "<group>"; };
+		435177FC215A3D5A009FF99C /* UIButton+CHForbidHighlighted.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CHForbidHighlighted.h"; sourceTree = "<group>"; };
+		435177FD215A3D5A009FF99C /* UIButton+CHForbidHighlighted.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CHForbidHighlighted.m"; sourceTree = "<group>"; };
 		B42F8A5361ABF7A6FF65D878 /* Pods-CHDivideEquallyChannelView-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHDivideEquallyChannelView-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CHDivideEquallyChannelView-Demo/Pods-CHDivideEquallyChannelView-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,8 +90,8 @@
 			children = (
 				4319BDAC212ECFCD00EE4093 /* CHDivideEquallyChannelView.h */,
 				4319BDAA212ECFCD00EE4093 /* CHDivideEquallyChannelView.m */,
-				4319BDA9212ECFCD00EE4093 /* UIButton+CHForbidHighlighted.h */,
-				4319BDAB212ECFCD00EE4093 /* UIButton+CHForbidHighlighted.m */,
+				435177FC215A3D5A009FF99C /* UIButton+CHForbidHighlighted.h */,
+				435177FD215A3D5A009FF99C /* UIButton+CHForbidHighlighted.m */,
 			);
 			name = CHDivideEquallyChannelView;
 			path = ../../CHDivideEquallyChannelView;
@@ -209,7 +209,7 @@
 				4319BDAD212ECFCD00EE4093 /* CHDivideEquallyChannelView.m in Sources */,
 				4319BD97212ECF1D00EE4093 /* ViewController.m in Sources */,
 				4319BDA2212ECF2100EE4093 /* main.m in Sources */,
-				4319BDAE212ECFCD00EE4093 /* UIButton+CHForbidHighlighted.m in Sources */,
+				435177FE215A3D5A009FF99C /* UIButton+CHForbidHighlighted.m in Sources */,
 				4319BD94212ECF1D00EE4093 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

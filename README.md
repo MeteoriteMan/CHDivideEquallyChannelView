@@ -33,3 +33,11 @@
 安装一下pod
 
 >`#import <CHDivideEquallyChannelView/CHDivideEquallyChannelView.h>`
+
+## 更新记录
+
+|版本|更新内容|
+|:--|:--|
+|0.0.1|支持设置TwigView,是否隐藏等.正常/选中状态字体,文字颜色设置.|
+|0.0.2|修复不能设置0.0.1版本TwigView颜色的BUG|
+|0.0.3|新增一个TwigView的过度动画|

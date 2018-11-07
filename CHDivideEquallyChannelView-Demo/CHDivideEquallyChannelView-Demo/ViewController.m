@@ -29,7 +29,7 @@
     self.divideEquallyChannelView.viewTwigWidth = 10;
     self.divideEquallyChannelView.viewTwigHeight = 6;
     self.divideEquallyChannelView.shouldTwigViewWidthEquateToSelectedButton = YES;
-    self.divideEquallyChannelView.arrayTitle = @[@"史泽东" ,@"董雷" ,@"村上村树"];
+    self.divideEquallyChannelView.arrayTitle = @[@"头条" ,@"推荐" ,@"科技" ,@"电子"];
     self.divideEquallyChannelView.buttonSelectedColor = [UIColor redColor];
     self.divideEquallyChannelView.viewTwigBackgroundColor = [UIColor greenColor];
     self.divideEquallyChannelView.twigViewAnimationType = CHDivideEquallyChannelViewTwigViewAnimationTypeBounces;

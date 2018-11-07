@@ -125,30 +125,14 @@
     if (self.arrayTitle.count != 0) {
         /// 分母
         NSInteger denominator;
-        /// 是否是偶数
-        BOOL isEvenNumber;
         /// 分子
         NSInteger numerator;
-        if (self.arrayTitle.count %2 == 0) {//偶数
-            denominator = self.arrayTitle.count + 2;
-            isEvenNumber = YES;
-        } else {//奇数
-            denominator = self.arrayTitle.count + 1;
-            isEvenNumber = NO;
-        }
+        denominator = self.arrayTitle.count + 1;
         NSMutableArray *arrayM = [NSMutableArray array];
         for (int i = 0; i < self.arrayTitle.count; i++) {
             UIButton *button = [UIButton new];
             [self addSubview:button];
-            if (isEvenNumber == YES) {//偶数
-                if (i <= self.arrayTitle.count / 2 - 1) {
-                    numerator = i + 1;
-                } else {
-                    numerator = i + 2;
-                }
-            } else {//奇数
-                numerator = i + 1;
-            }
+            numerator = i + 1;
             float multiplied = [[NSNumber numberWithInteger:numerator] floatValue] / [[NSNumber numberWithInteger:denominator] floatValue] * 2;
             [button mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.centerX.equalTo(self).multipliedBy(multiplied);

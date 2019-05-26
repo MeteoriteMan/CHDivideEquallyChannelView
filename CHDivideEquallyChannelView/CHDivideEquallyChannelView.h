@@ -41,6 +41,9 @@ typedef void(^CHDivideEquallyChannelViewClickBlock)(NSInteger tag);
 /// 指示器View宽度
 @property (nonatomic ,assign) CGFloat viewTwigWidth;
 
+/// twigView距离底部的高度
+@property (nonatomic ,assign) CGFloat twigViewBottom;
+
 /// 是否隐藏指示器
 @property (nonatomic ,assign) BOOL shouldHideTwigView;
 

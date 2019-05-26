@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
     s.name         = "CHDivideEquallyChannelView"
-    s.version      = "0.0.4"
+    s.version      = "0.0.5"
     s.summary      = "CHDivideEquallyChannelView可以让你快速的创建一个平分的按钮位置的频道控件"
     s.homepage     = "https://github.com/MeteoriteMan/CHDivideEquallyChannelView"
     s.license      = "MIT"

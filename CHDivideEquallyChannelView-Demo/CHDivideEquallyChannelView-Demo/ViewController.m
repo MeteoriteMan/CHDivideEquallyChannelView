@@ -33,6 +33,7 @@
     self.divideEquallyChannelView.buttonSelectedColor = [UIColor redColor];
     self.divideEquallyChannelView.viewTwigBackgroundColor = [UIColor greenColor];
     self.divideEquallyChannelView.twigViewAnimationType = CHDivideEquallyChannelViewTwigViewAnimationTypeBounces;
+    self.divideEquallyChannelView.twigViewBottom = 10;
     [self.view addSubview:self.divideEquallyChannelView];
     [self.divideEquallyChannelView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.offset(0);

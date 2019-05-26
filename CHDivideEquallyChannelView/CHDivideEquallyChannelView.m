@@ -31,14 +31,6 @@
     UIColor *_viewTwigBackgroundColor;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-
 - (UIColor *)buttonNormalColor {
     if (!_buttonNormalColor) {
         _buttonNormalColor = [UIColor lightGrayColor];
@@ -167,7 +159,7 @@
                         make.left.equalTo(buttonLastSelected);
                         make.right.equalTo(self->_buttonLastSelected);
                     }
-                    make.bottom.offset(0);
+                    make.bottom.offset(-self.twigViewBottom);
                     make.height.offset(self.viewTwigHeight);
                 }];
                 [UIView animateWithDuration:.25 animations:^{
@@ -176,7 +168,7 @@
                     self->_buttonLastSelected = buttonLastSelected;
                     [self.viewTwig mas_remakeConstraints:^(MASConstraintMaker *make) {
                         make.centerX.equalTo(buttonLastSelected);
-                        make.bottom.offset(0);
+                        make.bottom.offset(-self.twigViewBottom);
                         if (self.shouldTwigViewWidthEquateToSelectedButton) {
                             make.width.equalTo(buttonLastSelected.mas_width);
                         } else {
@@ -209,7 +201,7 @@
     _buttonLastSelected = buttonLastSelected;
     [self.viewTwig mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(buttonLastSelected);
-        make.bottom.offset(0);
+        make.bottom.offset(-self.twigViewBottom);
         if (self.shouldTwigViewWidthEquateToSelectedButton) {
             make.width.equalTo(buttonLastSelected.mas_width);
         } else {

@@ -7,21 +7,14 @@
 ## 使用
 
 ```
-    self.divideEquallyChannelView = [[CHDivideEquallyChannelView alloc] init];
-    self.divideEquallyChannelView.buttonNormalFont = [UIFont systemFontOfSize:10 weight:UIFontWeightRegular];
-    self.divideEquallyChannelView.buttonSelectedFont = [UIFont systemFontOfSize:16 weight:UIFontWeightMedium];
-    self.divideEquallyChannelView.shouldTwigViewBeRadius = YES;
-    self.divideEquallyChannelView.viewTwigWidth = 10;
-    self.divideEquallyChannelView.viewTwigHeight = 6;
-    self.divideEquallyChannelView.shouldTwigViewWidthEquateToSelectedButton = YES;
-    self.divideEquallyChannelView.arrayTitle = @[@"史泽东" ,@"董雷" ,@"村上村树"];
-    [self.view addSubview:self.divideEquallyChannelView];
-    [self.divideEquallyChannelView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.offset(0);
-        make.height.offset(44);
-        make.top.equalTo(self.mas_topLayoutGuide);
-    }];
-    [self.divideEquallyChannelView reloadData];
+self.divideEquallyChannelView = [[CHDivideEquallyChannelView alloc] init];
+[self.view addSubview:self.divideEquallyChannelView];
+[self.divideEquallyChannelView mas_makeConstraints:^(MASConstraintMaker *make) {
+	make.left.right.offset(0);
+	make.height.offset(44);
+	make.top.equalTo(self.mas_topLayoutGuide);
+}];
+[self.divideEquallyChannelView reloadData];
 ```
 
 ## 安装
@@ -38,7 +31,8 @@
 
 |版本|更新内容|
 |:--|:--|
-|0.0.1|支持设置TwigView,是否隐藏等.正常/选中状态字体,文字颜色设置.|
-|0.0.2|修复不能设置0.0.1版本TwigView颜色的BUG|
-|0.0.3|新增一个TwigView的过度动画|
+|0.0.5|新增twigView距离底边距离|
 |0.0.4|修复偶数个布局时的Bug|
+|0.0.3|新增一个TwigView的过度动画|
+|0.0.2|修复不能设置0.0.1版本TwigView颜色的BUG|
+|0.0.1|支持设置TwigView,是否隐藏等.正常/选中状态字体,文字颜色设置.|
